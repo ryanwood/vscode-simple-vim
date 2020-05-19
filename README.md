@@ -1,4 +1,4 @@
-# SimpleVim
+# MultiLine Vim
 
 An opinionated Vim-like extension for VSCode that prioritizes simplicity (of use and implementation) and integration with native VSCode features.
 
