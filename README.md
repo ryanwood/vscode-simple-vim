@@ -4,6 +4,12 @@ An opinionated Vim-like extension for VSCode that prioritizes simplicity (of use
 
 Once you enter Insert mode it will be a completely vanilla VSCode experience: the only event SimpleVim will listen for is the `Escape` key to go back to Normal mode.
 
+## Building extension
+
+```
+vsce package
+```
+
 
 ## Operators
 
