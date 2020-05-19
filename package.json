@@ -70,19 +70,19 @@
                 "simpleVim.normalModeCursorStyle": {
                     "type": "string",
                     "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
-                    "default": "underline",
+                    "default": "blockOutline",
                     "description": "Cursor style for editor when in NORMAL mode."
                 },
                 "simpleVim.visualModeCursorStyle": {
                     "type": "string",
                     "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
-                    "default": "lineThin",
+                    "default": "block",
                     "description": "Cursor style for editor when in VISUAL mode."
                 },
                 "simpleVim.visualLineModeCursorStyle": {
                     "type": "string",
                     "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
-                    "default": "lineThin",
+                    "default": "block",
                     "description": "Cursor style for editor when in VISUAL LINE mode."
                 }
             }
