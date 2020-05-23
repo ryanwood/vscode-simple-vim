@@ -2,7 +2,7 @@
     "name": "simple-vim",
     "displayName": "MultiLine Vim",
     "description": "Vim extension for VSCode with proper multiline support.",
-    "version": "0.0.5",
+    "version": "0.0.7",
     "license": "MIT",
     "publisher": "abuisman",
     "repository": {
