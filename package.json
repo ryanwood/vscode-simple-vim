@@ -50,6 +50,26 @@
                 "key": "ctrl+b",
                 "command": "extension.simpleVim.scrollUpPage",
                 "when": "editorTextFocus && !extension.simpleVim.insertMode"
+            },
+            {
+                "key": "down",
+                "command": "cursorDownSelect",
+                "when": "editorTextFocus && extension.simpleVim.visualMode"
+            },
+            {
+                "key": "left",
+                "command": "cursorLeftSelect",
+                "when": "editorTextFocus && extension.simpleVim.visualMode"
+            },
+            {
+                "key": "right",
+                "command": "cursorRightSelect",
+                "when": "editorTextFocus && extension.simpleVim.visualMode"
+            },
+            {
+                "key": "up",
+                "command": "cursorUpSelect",
+                "when": "editorTextFocus && extension.simpleVim.visualMode"
             }
         ],
         "configuration": {
@@ -63,25 +83,53 @@
                 },
                 "simpleVim.insertModeCursorStyle": {
                     "type": "string",
-                    "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
+                    "enum": [
+                        "line",
+                        "block",
+                        "underline",
+                        "lineThin",
+                        "blockOutline",
+                        "underlineThin"
+                    ],
                     "default": "line",
                     "description": "Cursor style for editor when in INSERT mode."
                 },
                 "simpleVim.normalModeCursorStyle": {
                     "type": "string",
-                    "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
+                    "enum": [
+                        "line",
+                        "block",
+                        "underline",
+                        "lineThin",
+                        "blockOutline",
+                        "underlineThin"
+                    ],
                     "default": "blockOutline",
                     "description": "Cursor style for editor when in NORMAL mode."
                 },
                 "simpleVim.visualModeCursorStyle": {
                     "type": "string",
-                    "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
+                    "enum": [
+                        "line",
+                        "block",
+                        "underline",
+                        "lineThin",
+                        "blockOutline",
+                        "underlineThin"
+                    ],
                     "default": "block",
                     "description": "Cursor style for editor when in VISUAL mode."
                 },
                 "simpleVim.visualLineModeCursorStyle": {
                     "type": "string",
-                    "enum": ["line", "block", "underline", "lineThin", "blockOutline", "underlineThin"],
+                    "enum": [
+                        "line",
+                        "block",
+                        "underline",
+                        "lineThin",
+                        "blockOutline",
+                        "underlineThin"
+                    ],
                     "default": "block",
                     "description": "Cursor style for editor when in VISUAL LINE mode."
                 }
