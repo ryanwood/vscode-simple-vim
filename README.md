@@ -1,5 +1,9 @@
 # MultiLine Vim
 
+I took a great vim extension created by jpotterm and adjusted it to suite my own preferences.
+
+## Original SimpleVim description
+
 An opinionated Vim-like extension for VSCode that prioritizes simplicity (of use and implementation) and integration with native VSCode features.
 
 Once you enter Insert mode it will be a completely vanilla VSCode experience: the only event SimpleVim will listen for is the `Escape` key to go back to Normal mode.
@@ -10,6 +14,9 @@ Once you enter Insert mode it will be a completely vanilla VSCode experience: th
 vsce package
 ```
 
+Below is the original README (mostly). I will get around to describing what I added at some point.
+
+# Old README:
 
 ## Operators
 

@@ -1,13 +1,13 @@
 {
-    "name": "simple-vim",
+    "name": "multiline-vim",
     "displayName": "MultiLine Vim",
-    "description": "Vim extension for VSCode with proper multiline support.",
+    "description": "Vim extension for VSCode with proper multiline support. Forked from jpotterm/vscode-simple-vim",
     "version": "0.0.7",
     "license": "MIT",
     "publisher": "abuisman",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jpotterm/vscode-simple-vim.git"
+        "url": "https://github.com/abuisman/vscode-simple-vim"
     },
     "engines": {
         "vscode": "^1.22.2"
