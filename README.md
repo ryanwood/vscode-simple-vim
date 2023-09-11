@@ -1,6 +1,14 @@
-# MultiLine Vim
+# Simpler Vim
 
-I took a great vim extension created by jpotterm and adjusted it to suite my own preferences.
+This is a [fork of a fork](https://www.youtube.com/watch?v=SH2XDPI5664). The original repo was https://github.com/jpotterm/simple-vim.
+That was forked by [@abuisman](https://github.com/abuisman) who stated "I took a great vim extension created by jpotterm and adjusted it
+to suite my own preferences." I took it one step further.
+
+The changes are as follows from the original https://github.com/jpotterm/simple-vim:
+- In normal mode `d`/`dd` yanks then deletes like Vim (remove `r`/`rr`) @abuisman
+- In visual mode, `d` yanks then deletes (remove `r`) @ryanwood
+- Allow use of f and F with just one character @abuisman
+- Add configuration for cursor styles @michaelgmcd
 
 ## Original SimpleVim description
 
@@ -13,21 +21,15 @@ Once you enter Insert mode it will be a completely vanilla VSCode experience: th
 ```
 vsce package
 ```
-
-Below is the original README (mostly). I will get around to describing what I added at some point.
-
-# Old README:
-
 ## Operators
 
 Operators act on a range of text. In Normal mode the range is specified by the OperatorRange typed after the operator. In Visual mode it is the visual selection.
 
 | Keys | Description |
 |-|-|
-| `d` | Delete range. |
+| `d` | Yank and delete range. |
 | `c` | Delete range and enter insert mode. |
 | `y` | Yank range. |
-| `r` | Yank and delete range. |
 | `s` | Select range and enter Visual mode. |
 
 
@@ -119,14 +121,12 @@ Actions are miscellaneous commands that don't follow the well-defined patterns o
 | `gp` | Select the result of the last `p` or `P` actions and enter Visual mode. |
 | `u` | Undo. |
 | `Ctrl+r` | Redo. |
-| `dd` | Delete current line. |
-| `D` | Delete to the end of the line. |
+| `dd` | Yank current line and delete it. |
+| `D` | Yank to the end of the line and delete it. |
 | `cc` | Delete current line and enter Insert mode. |
 | `C` | Delete to the end of the line and enter Insert mode. |
 | `yy` | Yank current line. |
 | `Y` | Yank to the end of the line. |
-| `rr` | Yank current line and delete it. |
-| `R` | Yank to the end of the line and delete it. |
 | `ss` | Select current line. |
 | `S` | Select to the end of the line. |
 | `x` | Delete character. |
@@ -153,9 +153,9 @@ SimpleVim prioritizes simplicity and integration with native VSCode features ove
 
 - SimpleVim lets the cursor go one past the last character of the line in Normal mode. It would be nice to prevent this, but because of VSCode's selection model and extension API there is no good way to do it. It would require ugly hacks and would make other parts of the SimpleVim experience buggy.
 
-- SimpleVim has no registers. Instead the operators have been modified so deleting text does not overwrite the text you yanked. A new `r` operator has been added for when you want to yank and delete text at the same time.
+- ~~SimpleVim has no registers. Instead the operators have been modified so deleting text does not overwrite the text you yanked. A new `r` operator has been added for when you want to yank and delete text at the same time.~~
 
-- SimpleVim's `f` and `t` motions work slightly differently from Vim's. `t` and `f` behave like Vim's `/` command, but `t` takes one character and `f` takes two. Or in other words, `t` works like Vim's `t` in Normal mode but Vim's `f` in Visual mode. And `f` behaves like the vim-sneak plugin.
+- ~~SimpleVim's `f` and `t` motions work slightly differently from Vim's. `t` and `f` behave like Vim's `/` command, but `t` takes one character and `f` takes two. Or in other words, `t` works like Vim's `t` in Normal mode but Vim's `f` in Visual mode. And `f` behaves like the vim-sneak plugin~~.
 
 - SimpleVim has no `/` (search) command. Instead you can either use the `f` motion or the native VSCode find. Between them most of the uses for `/` are taken care of.
 
